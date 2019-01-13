@@ -35,7 +35,7 @@ const About = () => (
                 </article>
                 <button
                     type="button"
-                    onClick={() => rsScroller.scrollToTop({ easing: 'linear' })}
+                    onClick={() => rsScroller.scrollToTop({ easing: 'linear',  revise: 100 })}
                     className="backToTopBtn"
                 >
                     <i className="fas fa-angle-up" />
