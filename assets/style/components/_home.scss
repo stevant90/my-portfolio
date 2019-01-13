@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Pridi|Rajdhani');
+
+.Home {
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    overflow: hidden;
+}
+.Home__content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.Home__title {
+    position: absolute;
+    top: 45%;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: -60px;
+  
+    span {
+      display: block;
+      background: -webkit-linear-gradient(white, #efefef);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media(min-width: 600px) {
+        font-size: 30px;
+    }
+    @media(min-width: 768px) {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    @media(min-width: 1024px) {
+        top: 40%;
+    }
+    @media(min-width: 1366px) {
+        font-size: 45px;
+    }
+}
+.Home__professionTitle {
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0 10px;
+    font-size: 18px;
+
+    @media(min-width: 600px) {
+        font-size: 20px;
+    }
+    @media(min-width: 768px) {
+        font-size: 25px;
+    }
+    @media(min-width: 1366px) {
+        font-size: 30px;
+    }
+}
+.Home__socialIcons {
+    margin-top: 40px;
+    a {
+        margin-right: 20px; 
+        &:last-of-type { margin-right: 0; } 
+
+        @media(min-width: 768px) {
+            margin-right: 40px;
+        }
+    }
+    img { 
+        width: 25px;
+        &:hover { animation: pulse .6s; animation-iteration-count: 2; }
+        
+
+        @media(min-width: 600px) {
+            width: 30px;
+        }
+        @media(min-width: 768px) {
+            width: 35px;
+        }
+        @media(min-width: 1366px) {
+            width: 45px;
+        }
+    }
+}
+.Home__swipeDownIcon {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    background: transparent;
+    border: none;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+
+    span {
+        font-size: 12px;
+        display: block;
+        background: -webkit-linear-gradient(white, #efefef);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media(min-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+    i { 
+        color: white; 
+        &:before { font-size: 25px; } 
+
+        @media(min-width: 600px) {
+            &:before { font-size: 30px; } 
+        }
+        @media(min-width: 768px) {
+            &:before { font-size: 35px; } 
+        }
+        @media(min-width: 1024px) {
+            &:before { font-size: 40px; } 
+        }
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    10% { transform: scale(1); }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}

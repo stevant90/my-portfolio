@@ -1,0 +1,23 @@
+.Footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
+.Footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 15px; 
+    box-sizing: border-box;
+    color: #FFFFFF;
+    a { color: #FFFFFF; text-decoration: none; }
+
+    @media(min-width: 1366px) {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+.About {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 80px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, .3);
+
+    @media(min-width: 768px) {
+    padding: 0 0 100px;
+       height: 100vh;
+       margin-top: 30px;
+    }
+}
+.About__content {
+    padding: 0 15px 15px;
+    margin-top: 20px;
+
+    @media(min-width: 768px) {
+        margin-top: 30px;
+    }
+    @media(min-width: 1024px) {
+        padding: 0 20px 20px;
+    }
+
+     img { 
+        width: 100%; 
+        border-radius: 4px; 
+        margin-bottom: 15px; 
+
+        @media(min-width: 600px) {
+            width: 50%;
+            float: left;
+            margin-bottom: 0;
+            margin-right: 15px;            
+        }
+        @media(min-width: 768px) {
+            width: 40%;          
+        }
+        @media(min-width: 1024px) {
+            width: 30%;          
+        }
+        @media(min-width: 1600px) {
+            width: 20%;   
+            margin-right: 20px;       
+        }
+    }
+}
+.About__text {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-weight: 600;
+    &:last-of-type { margin-bottom: 0; }
+    
+    @media(min-width: 768px) {
+        font-size: 16px;
+    }
+    @media(min-width: 1600px) {
+        font-size: 18px;
+        line-height: 2;
+    }
+}
+.About__quotesWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media(min-width: 768px) {
+        flex-direction: unset;
+    }
+    @media(min-width: 1024px) {
+        margin-top: 80px;
+    }
+    @media(min-width: 1600px) {
+        margin-top: 100px;
+    }
+}
+.About__quotes {
+    padding: 10px 0;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 7px;
+    }
+
+    @media(min-width: 768px) {
+        display: inline-block;
+        margin: 40px 0 20px;
+        width: 45%;
+        height: 200px;
+        vertical-align: bottom;
+    }
+    @media(min-width: 1024px) {
+        width: 35%;
+    }
+    @media(min-width: 1366px) {
+        width: 25%;
+    }
+    @media(min-width: 1600px) {
+        margin-bottom: 30px;
+    }
+}
+.firstQuote {
+    background: -webkit-linear-gradient(#b58f4b, #e4e3e0);
+
+    @media(min-width: 768px) {
+        transform: rotateZ(7deg);
+    }
+    span {
+        background: -webkit-linear-gradient(#887676, #191212);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        background: -webkit-linear-gradient(#827b7b, #000000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.secondQuote {
+    background: -webkit-linear-gradient(#2c3a4e, #3f354c);
+    @media(min-width: 768px) {
+        transform: rotateZ(-7deg);
+    }
+    span {
+        background: -webkit-linear-gradient(#f9f0f0, #b1a2a2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        background: -webkit-linear-gradient(#f7e3e3, #928080);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
