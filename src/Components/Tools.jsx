@@ -1,5 +1,6 @@
 import React from 'react';
-import rsScroller from 'react-smooth-scroller';
+
+import ScrollButton from './ScrollToTopBtn';
 
 import html from '../img/html.png';
 import css from '../img/css.png';
@@ -64,14 +65,7 @@ const Tools = () => (
                 <h5>GiT</h5>
                 <img src={git} alt="git logo" />
             </article>
-            <button
-                type="button"
-                onClick={() => rsScroller.scrollToTop({ easing: 'linear', revise: 100 })}
-                className="backToTopBtn"
-            >
-                <i className="fas fa-angle-up" />
-                <span>Top</span>
-            </button>
+            <ScrollButton scrollStepInPx="50" delayInMs="16" />
         </div>
     </div>
 );

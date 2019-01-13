@@ -1,8 +1,8 @@
 import React from 'react';
-import rsScroller from 'react-smooth-scroller';
+
+import ScrollButton from './ScrollToTopBtn';
 
 import myPhoto from '../img/me.jpg'
-
 const About = () => (
     <div className="About">
         <h1 className="About__title">About me</h1>
@@ -33,14 +33,7 @@ const About = () => (
                     <p>What you do</p>
                     <span>Today</span>
                 </article>
-                <button
-                    type="button"
-                    onClick={() => rsScroller.scrollToTop({ easing: 'linear',  revise: 100 })}
-                    className="backToTopBtn"
-                >
-                    <i className="fas fa-angle-up" />
-                    <span>Top</span>
-                </button>
+                <ScrollButton scrollStepInPx="50" delayInMs="16" />
             </div>
         </div>
     </div>

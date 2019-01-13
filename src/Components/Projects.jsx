@@ -1,5 +1,6 @@
 import React from 'react';
-import rsScroller from 'react-smooth-scroller';
+
+import ScrollButton from './ScrollToTopBtn';
 
 const Projects = () => (
     <div className="Projects">
@@ -126,15 +127,8 @@ const Projects = () => (
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/stevant90/myBook">More <i className="fas fa-angle-double-right" /></a>
                 </div>
             </article>
-            <button
-                type="button"
-                onClick={() => rsScroller.scrollToTop({ easing: 'linear', revise: 100 })}
-            className="backToTopBtn"
-        >
-                <i className="fas fa-angle-up" />
-            <span>Top</span>
-            </button>
-    </div>
+            <ScrollButton scrollStepInPx="50" delayInMs="16" />
+        </div>
     </div >
 );
 
